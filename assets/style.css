@@ -10,7 +10,7 @@ button{font:inherit;color:inherit}
 .sprite{position:absolute;width:0;height:0;overflow:hidden}
 svg use{fill:none}
 /* lijn-icoontjes (zelfde motieven als op Instagram) */
-.tab svg,.chips svg,.sticker svg,.dag svg,.band-loop svg,.logo-stoom,.quiz svg{fill:none;stroke:currentColor;stroke-width:14;stroke-linecap:round;stroke-linejoin:round}
+.tab svg,.chips svg,.dag svg,.band-loop svg,.quiz svg{fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
 .w{max-width:1200px;margin:0 auto;padding:0 40px}
 .w.smal{max-width:860px}
 .label{font-family:var(--font-ui);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--kaneel)}
@@ -44,8 +44,6 @@ p+p{margin-top:14px}
 .nav .w{display:flex;align-items:center;justify-content:space-between;height:72px}
 .logo{font-family:var(--font-titel);font-size:26px;text-decoration:none;display:flex;align-items:center;gap:8px}
 .logo em{color:var(--saffraan-licht);font-style:italic}
-.logo-stoom{width:20px;height:30px;color:var(--saffraan-licht);margin-top:-6px}
-.logo:hover .logo-stoom{animation:stoom 1.6s ease-in-out infinite}
 .nav ul{display:flex;gap:32px;list-style:none;font-family:var(--font-ui);font-size:15px}
 .nav ul a{text-decoration:none;opacity:.9}
 .nav ul a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
@@ -69,12 +67,6 @@ p+p{margin-top:14px}
 .hero-video{position:relative;justify-self:center;width:100%;max-width:360px}
 .hero-video video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:22px;border:8px solid var(--creme-licht);box-shadow:0 26px 60px rgba(69,42,49,.28);transform:rotate(2deg)}
 .video-knop{position:absolute;right:22px;top:22px;z-index:2;font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:rgba(69,42,49,.75);color:var(--creme-licht);border:0;border-radius:var(--radius-knop);padding:7px 12px;cursor:pointer}
-.sticker{position:absolute;z-index:1;width:84px;height:84px;border-radius:50%;background:var(--c);color:var(--c-op);display:grid;place-items:center;box-shadow:0 10px 24px rgba(69,42,49,.22);animation:zweef 6s ease-in-out infinite}
-.sticker svg{width:52px;height:52px}
-.s-ochtend{--c:var(--olijf);--c-op:var(--creme-licht);top:6%;left:-46px}
-.s-middag{--c:var(--kaneel);--c-op:var(--creme-licht);top:34%;right:-44px;animation-delay:-1.5s}
-.s-zondag{--c:var(--bordeaux);--c-op:var(--creme-licht);bottom:22%;left:-40px;animation-delay:-3s}
-.s-avond{--c:var(--saffraan);--c-op:var(--pruim);bottom:-24px;right:12%;animation-delay:-4.5s}
 @keyframes zweef{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-12px) rotate(4deg)}}
 
 /* lopende band */
@@ -234,10 +226,7 @@ p+p{margin-top:14px}
   .hero .knop{text-align:center}
   .nu-badge{font-size:14px}
   .hero-video{max-width:270px}
-  .sticker{width:60px;height:60px}
-  .sticker svg{width:36px;height:36px}
-  .s-ochtend{left:-30px}.s-middag{right:-30px}.s-zondag{left:-28px}
-  .band-rij{font-size:18px}
+        .band-rij{font-size:18px}
   .smaken{padding:72px 0 64px}
   h2{font-size:32px}
   .tabs{gap:8px}
