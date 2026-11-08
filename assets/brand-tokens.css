@@ -1,0 +1,39 @@
+/* Saffron & Steam — brand tokens voor de website
+   Gebruik: <link rel="stylesheet" href="brand-tokens.css"> bovenaan elke pagina.
+   Kleuren uit het moodboard (afgelezen, benaderingen); bordeaux = vaste hoofdkleur uit de briefing. */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Lato:wght@400;700&family=Oxygen:wght@400;700&display=swap");
+
+:root {
+  /* Pruim & bordeaux — merkkleur (titels, tekst, knoppen) */
+  --pruim:          #452A31; /* hsl(344, 24%, 22%) lopende tekst, donkere vlakken */
+  --bordeaux:       #8A384D; /* hsl(345, 42%, 38%) hoofdkleur: titels, primaire knop, links */
+  --roze:           #A16E7B; /* hsl(345, 21%, 53%) alleen grote tekst of decoratie */
+
+  /* Crème — achtergronden */
+  --zand:           #CFC5B4; /* hsl(38, 22%, 76%) lijnen, randen, uitgeschakelde elementen */
+  --creme:          #E6DCCD; /* hsl(36, 33%, 85%) kaarten, tweede achtergrond */
+  --creme-licht:    #F0E9DC; /* hsl(39, 40%, 90%) pagina-achtergrond */
+
+  /* Kaneel — accent (Ginger & Turmeric) */
+  --kaneel-donker:  #673215; /* hsl(21, 66%, 24%) */
+  --kaneel:         #A55024; /* hsl(20, 64%, 39%) */
+  --kaneel-licht:   #BE7C55; /* hsl(22, 45%, 54%) */
+
+  /* Saffraan — accent (Chamomile & Honey) */
+  --saffraan-donker:#B69034; /* hsl(42, 56%, 46%) */
+  --saffraan:       #CCA23C; /* hsl(42, 59%, 52%) tweede knop, highlights */
+  --saffraan-licht: #DCC68D; /* hsl(43, 53%, 71%) accenttekst op pruim */
+
+  /* Olijf — accent (Green Tea & Lemongrass) */
+  --olijf-donker:   #53563C; /* hsl(67, 18%, 29%) */
+  --olijf:          #6C6F52; /* hsl(66, 15%, 38%) */
+  --olijf-licht:    #959973; /* hsl(66, 16%, 53%) */
+
+  /* Typografie */
+  --font-titel: "Playfair Display", Georgia, serif;
+  --font-tekst: "Lato", "Helvetica Neue", Arial, sans-serif;
+  --font-ui:    "Oxygen", "Helvetica Neue", Arial, sans-serif;
+
+  --radius: 14px;
+  --radius-knop: 999px;
+}

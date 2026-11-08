@@ -1,0 +1,133 @@
+/* Saffron & Steam — landingspagina. Kleuren en fonts komen uit brand-tokens.css */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--creme-licht);color:var(--pruim);font-family:var(--font-tekst);font-size:18px;line-height:1.6}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+.w{max-width:1200px;margin:0 auto;padding:0 40px}
+.w.smal{max-width:820px}
+.label{font-family:var(--font-ui);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--kaneel)}
+h1,h2,h3,h4{font-family:var(--font-titel);font-weight:500;line-height:1.1}
+h2{font-size:40px;color:var(--bordeaux);margin:10px 0 18px}
+p+p{margin-top:14px}
+.klein-tekst{font-family:var(--font-ui);font-size:14px;color:var(--olijf-donker)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+/* knoppen */
+.knop{font-family:var(--font-ui);font-weight:700;font-size:15px;letter-spacing:.06em;text-transform:uppercase;padding:15px 28px;border-radius:var(--radius-knop);border:2px solid transparent;display:inline-block;text-decoration:none;cursor:pointer;transition:transform .15s,background .15s}
+.knop:hover{transform:translateY(-2px)}
+.knop:focus-visible{outline:3px solid var(--saffraan);outline-offset:3px}
+.k1{background:var(--bordeaux);color:var(--creme-licht)}
+.k1:hover{background:var(--pruim)}
+.k2{background:var(--saffraan);color:var(--pruim)}
+.k3{border-color:var(--creme-licht);color:var(--creme-licht)}
+.knop.klein{padding:10px 20px;font-size:13px}
+
+/* navigatie */
+.nav{background:var(--pruim);color:var(--creme-licht);position:sticky;top:0;z-index:10}
+.nav .w{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-family:var(--font-titel);font-size:26px;text-decoration:none}
+.logo em{color:var(--saffraan-licht);font-style:italic}
+.nav ul{display:flex;gap:34px;list-style:none;font-family:var(--font-ui);font-size:15px}
+.nav ul a{text-decoration:none;opacity:.9}
+.nav ul a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
+
+/* hero */
+.hero{background:var(--pruim);color:var(--creme-licht);padding:56px 0 88px}
+.hero .w{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center}
+.hero .label{color:var(--saffraan-licht)}
+.hero h1{font-size:72px;margin:16px 0 22px}
+.hero h1 em{color:var(--saffraan-licht)}
+.hero p{font-size:20px;max-width:480px;opacity:.92}
+.hero .acties{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+.hero-video{justify-self:center;width:100%;max-width:360px}
+.hero-video video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:var(--radius);box-shadow:0 24px 60px rgba(0,0,0,.35)}
+
+/* verhaal */
+.verhaal{padding:110px 0}
+.verhaal .w{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.verhaal img{border-radius:var(--radius);width:100%;height:auto}
+.verhaal p{max-width:520px}
+.verhaal .knop{margin-top:28px}
+.onder{border-bottom:3px solid var(--saffraan)}
+
+/* smaken */
+.smaken{background:var(--creme);padding:100px 0}
+.kopje{text-align:center;max-width:640px;margin:0 auto 48px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.kaart{background:var(--creme-licht);border-radius:var(--radius);overflow:hidden}
+.kaart img{aspect-ratio:4/5;object-fit:cover;width:100%;height:auto}
+.band{height:8px}
+.kaart .t{padding:20px 22px 24px}
+.moment{display:inline-block;font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--creme-licht);padding:4px 10px;border-radius:var(--radius-knop);margin-bottom:12px}
+.kaart h3{font-size:22px;color:var(--pruim)}
+.kaart p{font-family:var(--font-ui);font-size:14px;color:var(--olijf-donker);margin-top:6px}
+.midden{text-align:center;margin-top:48px}
+
+/* nieuwsbrief */
+.nb{padding:110px 0}
+.nb .w{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.nb-tekst p{max-width:460px}
+.nb-tekst .klein-tekst{margin-top:20px}
+
+/* MailerLite-formulier in de huisstijl */
+.ml-form-embedWrapper{background:var(--creme);border-radius:var(--radius);padding:40px}
+.ml-form-embedContent h4,.ml-form-successContent h4{font-size:30px;color:var(--bordeaux);margin-bottom:8px}
+.ml-form-embedContent p,.ml-form-successContent p{font-size:16px;margin-bottom:22px}
+.ml-form-fieldRow{margin-bottom:14px}
+.ml-form-fieldRow input{width:100%;font:inherit;font-size:16px;background:#fff;border:1.5px solid var(--zand);border-radius:10px;padding:13px 16px;color:var(--pruim)}
+.ml-form-fieldRow input::placeholder{color:#8a7a7e}
+.ml-form-fieldRow input:focus{outline:none;border-color:var(--bordeaux);box-shadow:0 0 0 3px #8A384D33}
+.ml-form-embedPermissions p{font-family:var(--font-ui);font-size:13px;color:var(--olijf-donker);margin:18px 0 12px}
+.ml-form-checkboxRow label{display:flex;gap:12px;align-items:center;cursor:pointer;font-size:15px;margin-bottom:24px}
+.ml-form-checkboxRow input{accent-color:var(--bordeaux);width:20px;height:20px;flex:none}
+.ml-form-embedSubmit button.primary{width:100%;font-family:var(--font-ui);font-weight:700;font-size:15px;letter-spacing:.06em;text-transform:uppercase;padding:16px;border:0;border-radius:var(--radius-knop);background:var(--bordeaux);color:var(--creme-licht);cursor:pointer}
+.ml-form-embedSubmit button.primary:hover{background:var(--pruim)}
+.ml-form-embedSubmit button.loading{width:100%;padding:16px;border:0;border-radius:var(--radius-knop);background:var(--bordeaux)}
+.ml-form-embedSubmitLoad{display:inline-block;width:20px;height:20px}
+.ml-form-embedSubmitLoad:after{content:" ";display:block;width:11px;height:11px;margin:1px;border-radius:50%;border:4px solid var(--creme-licht);border-color:var(--creme-licht) var(--creme-licht) var(--creme-licht) transparent;animation:ml-laden 1.2s linear infinite}
+@keyframes ml-laden{to{transform:rotate(360deg)}}
+.ml-error input{border-color:#c0392b!important}
+.ml-error .label-description,.ml-error .label-description p{color:#c0392b}
+
+/* privacy */
+.privacy{background:var(--creme);padding:90px 0}
+.privacy dl{display:grid;grid-template-columns:180px 1fr;gap:12px 28px;margin:10px 0 28px}
+.privacy dt{font-family:var(--font-ui);font-weight:700;font-size:15px}
+.privacy dd{font-size:16px}
+
+/* footer */
+.footer{background:var(--pruim);color:var(--creme-licht);padding:44px 0;font-family:var(--font-ui);font-size:14px}
+.footer .w{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.footer .logo{font-size:22px}
+.footer span{opacity:.8}
+
+/* tablet en telefoon */
+@media (max-width:980px){
+  .grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .w{padding:0 20px}
+  .nav ul{display:none}
+  .nav .w{height:64px}
+  .logo{font-size:22px}
+  .hero{padding:36px 0 56px}
+  .hero .w,.verhaal .w,.nb .w{grid-template-columns:1fr;gap:36px}
+  .hero h1{font-size:46px}
+  .hero p{font-size:18px}
+  .hero .acties{flex-direction:column}
+  .hero .knop{text-align:center}
+  .hero-video{max-width:300px}
+  .verhaal,.smaken,.nb{padding:64px 0}
+  .privacy{padding:64px 0}
+  h2{font-size:30px}
+  .grid{gap:14px}
+  .kaart .t{padding:14px 14px 18px}
+  .kaart h3{font-size:18px}
+  .moment{font-size:10px;padding:3px 8px}
+  .ml-form-embedWrapper{padding:26px}
+  .privacy dl{grid-template-columns:1fr;gap:2px}
+  .privacy dd{margin-bottom:12px}
+  .footer .w{flex-direction:column;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.knop{transition:none}}
